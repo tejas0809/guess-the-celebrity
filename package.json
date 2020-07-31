@@ -1,0 +1,23 @@
+{
+  "name": "hw2",
+  "version": "1.0.0",
+  "description": "hw2 for CIS 557",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cis557/hw2-tejas0809.git"
+  },
+  "author": "Tejas Srivastava",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cis557/hw2-tejas0809/issues"
+  },
+  "homepage": "https://github.com/cis557/hw2-tejas0809#readme",
+  "devDependencies": {
+    "eslint": "^6.4.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

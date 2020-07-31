@@ -1,0 +1,179 @@
+.header {
+  /* Gradient in header */
+  background-image: linear-gradient(to right, rgb(255, 137, 1), rgb(219, 25, 90) 40%);
+  background-size: 400%, 400%;
+  /* animation in gradient of the header */
+  animation: wave 2s ease-in-out 0s infinite;
+  position: fixed;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  /* Box shadow used for header */
+  box-shadow: 1px 10px 10px rgba(0, 10, 30, 0.8);
+}
+
+#greeting {
+  padding: 20px;
+  font-size: 40px;
+  font-family: sans-serif;
+  color: white;
+}
+
+/* Keyframe for the animation used */
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 50% 100%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.footer {
+  /* Gradient + Animation in Footer */
+  background-image: linear-gradient(to right, rgb(255, 137, 1), rgb(219, 25, 90) 40%);
+  background-size: 400%, 400%;
+  animation: wave 2s ease-in-out 0s infinite;
+  position: fixed;
+  text-align: center;
+  font-size: 15px;
+  font-family: sans-serif;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  /* Shadow for footer (3d effect) */
+  box-shadow: 1px -10px 7px rgba(0, 10, 30, 0.8);
+}
+
+body {
+  background-color: rgba(0, 40, 60, 0.9);
+}
+
+.main {
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 20px;
+  color: white;
+}
+
+#namelabel {
+  color: white;
+  font-family: sans-serif;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#namebox {
+  margin: 20px;
+  box-shadow: 10px 7px 7px rgba(0, 10, 30, 0.8);
+  font-family: sans-serif;
+}
+
+#gobutton {
+  background-color: rgb(219, 25, 90);
+  color: white;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border:2px solid rgb(219,25,90);
+  width: 400px;
+  align-self: center;
+  margin: 20px;
+  box-shadow: 10px 7px 7px rgba(0, 10, 30, 0.8);
+}
+
+#nextbutton {
+  background-color: rgb(219, 25, 90);
+  color: white;
+  font-family: sans-serif;
+  border-radius: 5px;
+  border:2px solid rgb(219,25,90);
+
+  align-self: center;
+  margin: 20px;
+  box-shadow: 10px 7px 7px rgba(0, 10, 30, 0.8);
+}
+
+.container {
+  /* flexbox layout used */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  z-index: -1;
+  top: 100px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.container>div {
+  /* all boxes of dimensions 200x200 and 2 px black border*/
+  border: 2px solid rgb(255, 137, 1);
+  color: white;
+  font-family: sans-serif;
+  background-color: rgb(255, 137, 1);
+  text-align: center;
+  box-shadow: 10px 7px 7px rgba(0, 10, 30, 0.8);
+}
+
+.sbox {
+  width: 200px;
+  height: 200px;
+  display: table;
+  color: #45A29E;
+  border-radius: 5px;
+}
+
+.tbox {
+  /* transition included for changing font, shape of cursor(hand) and background color */
+  /* Also changed the size for showing thne transition */
+  width: 200px;
+  height: 30px;
+  display: table;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 5px;
+  transition: background-color 0.5s, font-family 0.5s, height 0.5s, width 0.5s, cursor 1s, color 0.5s, border 0.5s;
+}
+
+.tbox P {
+  /* text in the textboxes is centrally positioned */
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tbox:hover {
+  /* height: 50px; */
+  border: 10px solid rgb(255, 137, 1);
+}
+
+.imbox {
+  /* transition included for image hovering, changing border to 10px
+ and yellow and cursor to spinning ball */
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  /* transition: border 0.5s, height 0.5s, width 0.5s, border-radius 0.5s; */
+}
+
+
+.imbox>img {
+  /* image in imagebox */
+  border-radius: 5px;
+  height: 200px;
+}
